@@ -5,6 +5,338 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- prikaz razlicitih conainera prema brack pointima -->
+    <div class="container">container</div>
+    <div class="container-fluid">container-fluid</div>
+    <div class="container-lg">container-lg</div>
+    <div class="container-md">container-md</div>
+    <div class="container-sm">container-sm</div>
+    <div class="container-xl">container-xl</div>
+    <div class="container-xxl">container-xxl</div>
+    <hr />
+    <!-- kontejner, red, kolona -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md">col-md</div>
+        <div class="col-sm">col-sm</div>
+        <div class="col-sm">col-sm</div>
+      </div>
+      <div class="row">
+        <!-- odredjivanje koliko kolona zauzima jedan div -->
+        <div class="col-sm-8">col-sm-8</div>
+        <div class="col-sm">col-sm</div>
+      </div>
+    </div>
+    <hr />
+    <!-- dovi kontejner -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">CONTENT</div>
+        <div class="col-md-4">SIDEBAR</div>
+      </div>
+    </div>
+    <hr />
+    <!-- Gutteri -->
+    <!-- classe: m-za margine, p-za padding -->
+    <h2>Gutter</h2>
+    <div class="container">
+      <div class="row my-3">
+        <p>m-za margine</p>
+        <div class="col">
+          <div class="p-5 border">Custom padding 'p'-za padding</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border">Custom padding</div>
+        </div>
+      </div>
+    </div>
+    <h2>Gutter primer</h2>
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-6">'g' je za Gutter</div>
+        <div class="col-6">2</div>
+        <div class="col-6">3</div>
+        <div class="col-6">4</div>
+      </div>
+    </div>
+    <hr />
+    <!-- Rad na Bootstrap komponentama -->
+    <!-- Prvo su Button-i -->
+    <h1 class="text-center text-decoration-underline text-uppercase">
+      Komponente
+    </h1>
+    <h2>Buttons</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-primary">Primary</button>
+          <button type="button" class="btn btn-secondary">Secondary</button>
+          <button type="button" class="btn btn-success">Success</button>
+          <button type="button" class="btn btn-danger">Danger</button>
+          <button type="button" class="btn btn-warning">Warning</button>
+          <button type="button" class="btn btn-info">Info</button>
+          <button type="button" class="btn btn-light">Light</button>
+          <button type="button" class="btn btn-dark">Dark</button>
+          <button type="button" class="btn btn-link">Link</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-outline-primary">
+            outline-primary
+          </button>
+          <button type="button" class="btn btn-outline-secondary">
+            outline-secondary
+          </button>
+          <button type="button" class="btn btn-outline-success">
+            outline-success
+          </button>
+          <button type="button" class="btn btn-outline-danger">
+            outline-danger
+          </button>
+          <button type="button" class="btn btn-outline-warning">
+            outline-warning
+          </button>
+          <button type="button" class="btn btn-outline-info">
+            outline-info
+          </button>
+          <button type="button" class="btn btn-outline-light">
+            outline-light
+          </button>
+          <button type="button" class="btn btn-outline-dark">
+            outline-dark
+          </button>
+          <br />
+          <p>
+            Button moze da bude i 'disabled' da ne bude klikabilno. Veliko 'lg',
+            malo 'sm'
+          </p>
+          <!-- Button moze da bude i 'disabled' da ne bude klikabilno -->
+          <button type="button" class="btn btn-light" disabled>Disabled</button>
+          <!-- dodatnr klase stilizacije veliko 'lg' ili malo 'sm' -->
+          <button type="button" class="btn btn-secondary btn-lg">btn-lg</button>
+          <button type="button" class="btn btn-secondary btn-sm">btn-sm</button>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!-- KARTICE -->
+    <h2>KARTICE</h2>
+    <p class="text-center">Kartice koje kontrolisemo CSS-om</p>
+    <div class="card" style="width: 22rem">
+      <div class="card-body">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla
+        excepturi quibusdam sint vero deleniti! Inventore voluptatem ipsa
+        reprehenderit earum voluptates, optio nesciunt architecto quisquam
+        dolorem tempora nisi nihil provident numquam.
+      </div>
+    </div>
+    <!-- Kartice kontrolisane Grid-om -->
+    <p>Kartice kontrolisane Grid-om</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card text-black">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
+            quisquam officiis quaerat quis provident ea explicabo accusamus
+            suscipit aliquam ducimus ad eius, distinctio harum vel? Adipisci,
+            quae. Nesciunt, eligendi ipsum. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Alias reprehenderit quasi accusantium
+            voluptates in aut distinctio similique quidem facere beatae iste
+            consequuntur, sit totam doloremque facilis minima, porro nobis
+            maiores?
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Kartica sa slikom -->
+    <p class="text-center">Kartica sa slikom</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <img
+              src="./image/slika1.png"
+              alt="logo bootstrap"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-black">Title</h5>
+              <p class="card-text text-black">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                error hic ad ut praesentium, voluptate odit alias aliquid et
+                doloremque nobis, reiciendis eligendi quos ab? Nisi cupiditate
+                tempore mollitia laborum?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Horizontalan kartica sa slikom -->
+    <p class="text-center">Horizontalan kartica sa slikom</p>
+    <div class="card mb-3">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="./image/slika1.png" alt="" />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Title</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis
+              voluptates voluptatibus ullam perspiciatis quae dolorum autem
+              consequuntur nobis, quia beatae nostrum vitae id quos sit
+              repellendus, suscipit minima repellat veniam dolore quisquam
+              magnam debitis corporis! Tenetur aliquam, et autem nisi, provident
+              exercitationem, ipsa nostrum esse suscipit animi reprehenderit sit
+              inventore.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last update 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!-- Kartica sa Headerom i Footerom -->
+    <p>Kartica sa Headerom i Footerom</p>
+    <div class="card my-3" style="width: 18rem">
+      <div class="card-header">HEADER</div>
+      <div class="card-body">
+        <h5 class="card-title">Special card</h5>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit!
+        </p>
+        <a href="#" class="btn btn-primary">Go!</a>
+      </div>
+    </div>
+    <hr />
+    <!-- Dodavanje boja u Kartice -->
+    <p class="text-center">Dodavanje boja u kartice</p>
+    <div class="card text-white bg-danger mb-3" style="width: 18rem">
+      <div class="card-header">HEADER</div>
+      <div class="card-body">
+        <h5 class="card-title">Naslov kartice</h5>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        </p>
+        <a href="#" class="btn btn-warning">Link button</a>
+      </div>
+    </div>
+    <hr />
+    <!-- Borders kod kartica -->
+    <p>Borders kod kartica</p>
+    <div class="card border-warning mb-3" style="width: 18rem">
+      <div class="card-header">HEADER</div>
+      <div class="card-body">
+        <h5 class="card-title">Naslov kartice</h5>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        </p>
+        <a href="#" class="btn btn-warning">Link button</a>
+      </div>
+    </div>
+    <hr />
+    <!-- Grupe kartica -->
+    <p class="text-center">Grupe kartica</p>
+    <!-- ovde je card-group vraper gde se skupljaju kartice -->
+    <div class="card-group my-3">
+      <!-- prva kartica -->
+      <div class="card border-warning mb-3" style="width: 18rem">
+        <div class="card-header">HEADER 1</div>
+        <div class="card-body">
+          <h5 class="card-title">Naslov kartice</h5>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          </p>
+          <a href="#" class="btn btn-warning">Link button</a>
+        </div>
+      </div>
+      <!-- druga kartica -->
+      <div class="card border-warning mb-3" style="width: 18rem">
+        <div class="card-header">HEADER 2</div>
+        <div class="card-body">
+          <h5 class="card-title">Naslov kartice</h5>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          </p>
+          <a href="#" class="btn btn-warning">Link button</a>
+        </div>
+      </div>
+      <!-- treca kartica -->
+      <div class="card border-warning mb-3" style="width: 18rem">
+        <div class="card-header">HEADER 3</div>
+        <div class="card-body">
+          <h5 class="card-title">Naslov kartice</h5>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          </p>
+          <a href="#" class="btn btn-warning">Link button</a>
+        </div>
+      </div>
+      <!-- cetvrta kartica -->
+      <div class="card border-warning mb-3" style="width: 18rem">
+        <div class="card-header">HEADER 4</div>
+        <div class="card-body">
+          <h5 class="card-title">Naslov kartice</h5>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          </p>
+          <a href="#" class="btn btn-warning">Link button</a>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!-- TIPOGRAFIJA -->
+    <h1 class="text-center">TIPOGRAFIJA</h1>
+    <h1>h1 heading</h1>
+    <h2>h2 heading</h2>
+    <h3>h3 heading</h3>
+    <h4>h4 heading</h4>
+    <h5>h5 heading</h5>
+    <h6>h6 heading</h6>
+    <p class="h1">h1 Bootstrap heading u paragrafu</p>
+    <p class="h2">h2 Bootstrap heading</p>
+    <p class="h3">h3 Bootstrap heading</p>
+    <p class="h4">h4 Bootstrap heading</p>
+    <p class="h5">h5 Bootstrap heading</p>
+    <p class="h6">h6 Bootstrap heading</p>
+    <p class="display-1">Display-1</p>
+    <p class="display-2">Display-2</p>
+    <p class="display-3">Display-3</p>
+    <p class="display-4">Display-4</p>
+    <p class="display-5">Display-5</p>
+    <p class="display-6">Display-6</p>
+    <hr />
+    <!-- LISTE -->
+    <ul class="list-unstyled p-4">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <ul>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+        <li>d</li>
+      </ul>
+    </ul>
+    <!-- Inline LISTE -->
+    <p class="text-center">Inline liste</p>
+    <ul class="list-inline">
+      <li class="list-inline-item">Item 1</li>
+      <li class="list-inline-item">Item 2</li>
+      <li class="list-inline-item">Item 3</li>
+      <li class="list-inline-item">Item 4</li>
+    </ul>
+    <!-- Responzivne slike -->
+  </body>
 </html>
